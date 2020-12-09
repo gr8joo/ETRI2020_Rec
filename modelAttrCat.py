@@ -26,7 +26,7 @@ class Model():
             **kwargs
         )
         '''
-        l2_coeff = 0.01
+        l2_coeff = 0.0001
         with tf.variable_scope("SASRec", reuse=reuse):
             # Attribute encoding
             with tf.variable_scope("attr_enc", reuse=reuse):
