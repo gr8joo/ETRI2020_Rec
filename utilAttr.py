@@ -39,7 +39,7 @@ def data_partition(fname):
 
 def evaluate(model, dataset, args, sess):
     [train, valid, test, usernum, itemnum] = copy.deepcopy(dataset)
-    attr = np.load('data/genome_mat.npy')
+    attr = np.load('data/genome_mat_v2.npy')
 
     NDCG = 0.0
     HT = 0.0
@@ -97,7 +97,7 @@ def evaluate(model, dataset, args, sess):
 
 def evaluate_valid(model, dataset, args, sess):
     [train, valid, test, usernum, itemnum] = copy.deepcopy(dataset)
-    attr = np.load('data/genome_mat.npy')
+    attr = np.load('data/genome_mat_v2.npy')
 
     NDCG = 0.0
     valid_user = 0.0

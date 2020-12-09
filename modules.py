@@ -9,7 +9,7 @@ https://www.github.com/kyubyong/transformer
 from __future__ import print_function
 import tensorflow as tf
 import numpy as np
-
+from tensorflow.keras import regularizers
 
 def positional_encoding(dim, sentence_length, dtype=tf.float32):
 
